@@ -1,43 +1,44 @@
-
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-image: url('logo-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    text-align: center;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #555;
+  color: #f3f3f3;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    min-height: 100vh;
+.container {
+  position: relative;
+  z-index: 2;
+  padding: 60px 20px;
 }
-
-.center-logo {
-    width: 150px;
-    margin-top: 30px;
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
 }
-
-h1 {
-    font-size: 3em;
-    color: #FFD700;
-    margin-bottom: 0;
+.background-logo {
+  position: absolute;
+  background: url('logo-bg.png') no-repeat center center;
+  background-size: 400px;
+  opacity: 0.05;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
-
-h2, h3 {
-    font-weight: 300;
-    margin: 10px 0;
-}
-
-a {
-    color: #ADD8E6;
-    text-decoration: none;
-}
-
 .sketch {
-    width: 200px;
-    margin-top: 20px;
+  margin-top: 20px;
+  width: 120px;
+  border-radius: 10px;
+}
+a {
+  color: #c7e2ff;
+  text-decoration: none;
+}
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #ddd;
 }
